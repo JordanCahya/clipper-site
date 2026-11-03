@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clipper Uploader</title>
+<meta name="description" content="A personal tool that cuts highlight clips from authorized videos and uploads them as private videos to its owner’s YouTube channel for review.">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --text: #1d1d1b;
+    --muted: #5d5d58;
+    --rule: #dcd9d0;
+    --link: #1f4fa3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17181a;
+      --text: #ecebe6;
+      --muted: #a4a39c;
+      --rule: #34353a;
+      --link: #8fb4f5;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0 auto;
+    max-width: 38rem;
+    padding: 3.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font: 1.125rem/1.65 "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  }
+  h1 { font-size: 2.25rem; line-height: 1.15; margin: 0 0 1.25rem; letter-spacing: -0.01em; }
+  h2 { font-size: 1.25rem; margin: 2.5rem 0 0.5rem; }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; }
+  a { color: var(--link); text-underline-offset: 0.15em; }
+  a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Clipper Uploader</h1>
+  <p>Clipper Uploader is a personal tool that cuts short highlight clips from videos its owner is authorized to use, and uploads each clip to the owner’s own YouTube channel as a private video. The owner then reviews every clip in YouTube Studio before deciding whether to publish it.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Transcribes a source video and picks the strongest moments.</li>
+    <li>Reframes them for vertical viewing and adds captions.</li>
+    <li>Uploads the finished clips to the owner’s YouTube channel, as private videos.</li>
+  </ul>
+
+  <h2>Access to Google data</h2>
+  <p>The app asks for one permission: uploading videos to the signed-in user’s YouTube channel (<code>youtube.upload</code>). It cannot read, change, or delete anything else on the channel. How the app handles data is described in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <footer>
+    <p>Contact: <a href="mailto:YOUR_EMAIL">shroomboi97@gmail.com</a> · <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</main>
+</body>
+</html>
